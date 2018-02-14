@@ -191,7 +191,7 @@ exports.multitxs = function(req, res, next) {
       // It could be that a txid is stored at an address but it is
       // no longer at bitcoind (for example a double spend)
 
-      var transactions = _.compact(_.pluck(txs, 'info'));
+      var transactions = _.compact(_.map(txs, 'info'));
       //rm not used items
       _.each(transactions, function(t) {
         t.vin = _.map(t.vin, function(i) {
