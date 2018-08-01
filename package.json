@@ -1,8 +1,8 @@
 {
-  "name": "insight-api-neetcoin",
+  "name": "insight-api-sandego",
   "description": "An open-source bitcoin blockchain API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the bitcoin network and build your own services with it.",
   "version": "0.2.18",
-  "repository": "https://github.com/NEETCOINTeam/insight-api-neetcoin.git",
+  "repository": "https://github.com/zinntikumugai/insight-api-sandego.git",
   "contributors": [{
     "name": "Matias Alejo Garcia",
     "email": "ematiu@gmail.com"
@@ -23,9 +23,9 @@
     "email": "jungans@gmail.com"
   }],
   "bugs": {
-    "url": "https://github.com/NEETCOINTeam/insight-api-neetcoin/issues"
+    "url": "https://github.com/zinntikumugai/insight-api-sandego/issues"
   },
-  "homepage": "https://github.com/NEETCOINTeam/insight-api-neetcoin",
+  "homepage": "https://github.com/zinntikumugai/insight-api-sandego",
   "license": "MIT",
   "keywords": [
     "insight",
@@ -47,7 +47,7 @@
     "async": "*",
     "base58-native": "0.1.4",
     "bignum": "*",
-    "bitcore": "git://github.com/NEETCOINTeam/bitcore-neetcoin.git",
+    "bitcore": "git://github.com/zinntikumugai/bitcore-sandego.git",
     "bufferput": "git://github.com/bitpay/node-bufferput.git",
     "buffertools": "*",
     "commander": "^2.3.0",
@@ -67,7 +67,7 @@
     "socket.io": "~1.7",
     "socket.io-client": "~1.7",
     "soop": "=0.1.5",
-    "winston": "*",
+    "winston": "=2.4.3",
     "xmlhttprequest": "~1.8.0"
   },
   "devDependencies": {

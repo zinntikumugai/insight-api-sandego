@@ -19,14 +19,14 @@ function getUserHome() {
   return process.env[(process.platform == 'win32') ? 'USERPROFILE' : 'HOME'];
 }
 
-var home = process.env.INSIGHT_DB || (getUserHome() + '/.insight-neetcoin');
+var home = process.env.INSIGHT_DB || (getUserHome() + '/.insight-sandego');
 
 if (process.env.INSIGHT_NETWORK === 'livenet') {
   env = 'livenet';
   db = home;
   port = '3000';
-  b_port = '21010';
-  p2p_port = '21011';
+  b_port = '31933';
+  p2p_port = '31932';
 } else {
   env = 'testnet';
   db = home + '/testnet';
@@ -57,9 +57,9 @@ var isWin = /^win/.test(process.platform);
 var isMac = /^darwin/.test(process.platform);
 var isLinux = /^linux/.test(process.platform);
 if (!dataDir) {
-  if (isWin) dataDir = '%APPDATA%\\NEETCOIN\\';
-  if (isMac) dataDir = process.env.HOME + '/Library/Application Support/NEETCOIN/';
-  if (isLinux) dataDir = process.env.HOME + '/.NEETCOIN/';
+  if (isWin) dataDir = '%APPDATA%\\SanDeGo\\';
+  if (isMac) dataDir = process.env.HOME + '/Library/Application Support/SanDeGo/';
+  if (isLinux) dataDir = process.env.HOME + '/.sandego/';
 }
 dataDir += network === 'testnet' ? 'testnet3' : '';
 
